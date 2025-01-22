@@ -4,7 +4,7 @@ async function loadData() {
         const data = await response.json();
         let htmlContent = '';
         for (const [semester, courses] of Object.entries(data)) {
-            if (semester.startsWith('نیمسال') || semester.startsWith('درسهای')) {
+            if (semester.startsWith('نیمسال') || semester.startsWith('درس های')) {
                 htmlContent += `<div class="semester-title">${semester}</div>`;
                 htmlContent += `<table>
                     <thead>
