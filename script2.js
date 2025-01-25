@@ -1,6 +1,6 @@
 async function loadData() {
     try {
-      const response = await fetch("data.json");
+      const response = await fetch("data2.json");
       const data = await response.json();
       let htmlContent = "";
       for (const [semester, courses] of Object.entries(data)) {
